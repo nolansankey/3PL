@@ -507,7 +507,7 @@
         async function this_week_data_fetch(){
             let this_picks_data = await fetch(thisWeekSheetLink)    
               .then((response) => response.json());
-            var num_players = 32;
+            var num_players = 30;
             var head_row = document.getElementById("this_week_head_row");
             var table = document.getElementById("this_week_table");
             var curr_user = localStorage.getItem("user");
@@ -655,7 +655,7 @@
         async function last_week_data_fetch(){
             let last_picks_data = await fetch(lastWeekSheetLink)    
               .then((response) => response.json());
-            var num_players = 32;
+            var num_players = 30;
             var head_row = document.getElementById("last_week_head_row");
             var table = document.getElementById("last_week_table");
             for (let i = 0; i < num_players; i++) {
@@ -774,19 +774,31 @@
 
     </script>
 
-    <script>
-        if (window.innerWidth < 766) {
-            document.getElementById("nav").style.display = "none";
-        }
-        function myFunction() {
-            var x = document.getElementById("nav");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+<script>
+    function handleNavVisibility() {
+      var nav = document.getElementById("nav");
+      if (window.innerWidth < 766) {
+          nav.style.display = "none";
+      } else {
+          nav.style.display = "block";
+      }
+  }
+
+  // Initialize on page load
+  handleNavVisibility();
+
+  // Update on window resize
+  window.addEventListener('resize', handleNavVisibility);
+
+  function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+</script>
 
     <script>
         var past_week_1 = true;

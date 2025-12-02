@@ -327,15 +327,27 @@
 </script>
 
 <script>
-    if (window.innerWidth < 766) {
-        document.getElementById("nav").style.display = "none";
-    }
-    function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
+    function handleNavVisibility() {
+      var nav = document.getElementById("nav");
+      if (window.innerWidth < 766) {
+          nav.style.display = "none";
+      } else {
+          nav.style.display = "block";
+      }
+  }
+
+  // Initialize on page load
+  handleNavVisibility();
+
+  // Update on window resize
+  window.addEventListener('resize', handleNavVisibility);
+
+  function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
 </script>
