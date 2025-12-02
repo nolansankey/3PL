@@ -138,6 +138,7 @@
       .records-section,
       .week-winners-section,
       .losers-section,
+      .threes-section,
       .averages-section {
         text-align: center;
         display: flex;
@@ -187,7 +188,7 @@
         background-color: var(--primary-color);
         color: white;
         height: 40px;
-        text-align: left;
+        text-align: center;
         padding: 10px 15px;
         font-weight: 600;
       }
@@ -272,9 +273,10 @@
         .records-section,
         .week-winners-section,
         .losers-section,
+        .threes-section,
         .averages-section {
           width: 95%;
-          padding: 10px 10px;
+          padding: 10px 10px 30px, 10px;
         }
         
         #nav {
@@ -344,7 +346,9 @@
           <tbody>
             <tr>
               <td>Most Week Wins</td>
-              <td><strong>River Fox-Welch:</strong> 5</td>
+              <td><strong>River Fox-Welch:</strong> 5<br>
+                 <strong>Kyle Kagan:</strong> 5<br>
+                  <strong>Chris Wilford:</strong> 5</td>
             </tr>
             <tr>
               <td>Highest Week Score</td>
@@ -388,6 +392,26 @@
           </thead>  
           <tbody>
             <tr>
+              <td>Season 15, Week 5<br>(11/24/2025)</td>
+              <td><strong>Kyle Kagan (5):</strong> 21</td> 
+            </tr>
+            <tr>
+              <td>Season 15, Week 4<br>(11/17/2025)</td>
+              <td><strong>Joseph Klein (2):</strong> 20</td> 
+            </tr>
+            <tr>
+              <td>Season 15, Week 3<br>(11/10/2025)</td>
+              <td><strong>Coby Gibson:</strong> 24</td> 
+            </tr>
+            <tr>
+              <td>Season 15, Week 2<br>(11/3/2025)</td>
+              <td><strong>Jonathan Pieper (3):</strong> 24</td> 
+            </tr>
+            <tr>
+              <td>Season 15, Week 1<br>(10/27/2025)</td>
+              <td><strong>Chris Wilford (5), Jack Thompson, Jonathan Pieper (2), Noel Sankey:</strong> 21</td> 
+            </tr>
+            <tr>
               <td>Season 14, Week 5<br>(4/19/2025)</td>
               <td><strong>Alejandro Martinez:</strong> 26</td> 
             </tr>
@@ -406,7 +430,8 @@
             <tr>
               <td>Season 14, Week 1<br>(3/21/2025)</td>
               <td><strong>Brian Tomasco (3):</strong> 21</td> 
-            </tr><tr>
+            </tr>
+            <tr>
               <td>Season 13, Week 5<br>(2/3/2025)</td>
               <td><strong>Brian Tomasco (2):</strong> 27</td> 
             </tr>
@@ -686,7 +711,84 @@
         </table>
       </div>
     </section>
-      
+    
+     <!-- 3s Section -->
+    <section id="threes" class="threes-section">
+      <div class="content-text">
+        <h1 class="shrink-text-lg">Most 3s:</h1>
+        <table>
+            <thead>
+            <tr>
+              <th>Season</th>
+              <th>Winner</th>
+            </tr>
+          </thead>  
+          <tbody>
+            <tr>
+              <td>Season 15</td>
+              <td><strong>Coby Gibson:</strong> 8 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 14</td>
+              <td><strong>Kevin Sankey (2):</strong> 10 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 13</td>
+              <td><strong>Briam Tomasco, Liam Woehrle:</strong> 8 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 12</td>
+              <td><strong>Rijul Garg, Tim Roberts:</strong> 11 (6wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 11</td>
+              <td><strong>Kevin Sankey:</strong> 15 (6wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 10</td>
+              <td><strong>Joseph Klein:</strong> 8 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 9</td>
+              <td><strong>Ben DiMaio:</strong> 12 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 8</td>
+              <td><strong>Alex Hazlett, Magnus Bigelow, River Fox-Welch, Ryan Blankemeier, Tomas Greenberg:</strong> 6 (4wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 7</td>
+              <td><strong>Kyle Kagan:</strong> 10 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 6</td>
+              <td><strong>John Arcona:</strong> 10 (5wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 5</td>
+              <td><strong>Jack Vasu:</strong> 12 (6wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 4</td>
+              <td><strong>Andrew Mitchell, Nolan Sankey:</strong> 9 (6wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 3</td>
+              <td><strong>Sam Masling:</strong> 11 (6wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 2</td>
+              <td><strong>Chris Wilford, Douglas Vetter (2), Mason Strazzella:</strong> 7 (4wk)</td> 
+            </tr>
+            <tr>
+              <td>Season 1</td>
+              <td><strong>Douglas Vetter:</strong> 12 (6wk)</td> 
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+        
     <!-- Losers Section -->
     <section id="losers" class="losers-section">
       <div class="content-text">
@@ -699,6 +801,14 @@
             </tr>
           </thead>  
           <tbody>
+            <tr>
+              <td>Season 15</td>
+              <td><strong>Chris McGrath:</strong> 45.54%</td> 
+            </tr>
+            <tr>
+              <td>Season 14</td>
+              <td><strong>Tim Roberts:</strong> 46.67%</td> 
+            </tr>
             <tr>
               <td>Season 13</td>
               <td><strong>Nolan Sankey:</strong> 37.25%</td> 
@@ -756,7 +866,7 @@
       </div>
     </section>
       
-    <!-- Losers Section -->
+    <!-- Averages Section -->
     <section id="averages" class="averages-section">
       <div class="content-text">
         <h1 class="shrink-text-lg">Season Averages:</h1>
@@ -768,6 +878,14 @@
             </tr>
           </thead>  
           <tbody>
+            <tr>
+              <td>Season 15</td>
+              <td>51.86%</td> 
+            </tr> 
+            <tr>
+              <td>Season 14</td>
+              <td>53.16%</td> 
+            </tr> 
             <tr>
               <td>Season 13</td>
               <td>50.99%</td> 
